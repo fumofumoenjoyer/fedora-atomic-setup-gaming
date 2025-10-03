@@ -15,7 +15,7 @@ gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 metadata_expire=1h
 EOF
 
-rpm-ostree install distrobox clang llvm java-latest-openjdk-devel gcc zsh codium
+rpm-ostree install distrobox clang llvm java-latest-openjdk-devel gcc zsh codium fastfetch
 
 flatpak install flathub app.devsuite.Ptyxis
 flatpak install flathub dev.vencord.Vesktop
