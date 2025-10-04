@@ -10,7 +10,7 @@
 
 # --- Configuration ---
 # You can change the container name here if you like.
-CONTAINER_NAME="gaming"
+CONTAINER_NAME="game-box"
 CONTAINER_IMAGE="ghcr.io/ublue-os/bazzite-arch:latest"
 
 # --- Script Start ---
