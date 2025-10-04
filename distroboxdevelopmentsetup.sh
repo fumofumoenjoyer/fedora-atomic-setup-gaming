@@ -48,7 +48,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm spyder jdk-openjdk clang llvm lld lldb libc++ cython libclc polly rustup vscodium-bin 
+yay -Syyu --noconfirm npm spyder python-pip maven jdk-openjdk clang llvm lld lldb libc++ cython libclc polly rustup vscodium-bin 
 rustup update
 rustup default stable
 rustup target add wasm32-unknown-unknown
