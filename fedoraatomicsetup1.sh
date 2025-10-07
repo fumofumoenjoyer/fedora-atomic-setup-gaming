@@ -4,7 +4,13 @@ cd
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-rpm-ostree install distrobox zsh fastfetch
+rpm-ostree install zsh
+
+sudo rpm-ostree apply-live
+
+chsh /bin/zsh
+
+rpm-ostree install distrobox fastfetch
 
 flatpak install flathub app.devsuite.Ptyxis
 flatpak install flathub dev.vencord.Vesktop
