@@ -8,7 +8,7 @@ rpm-ostree install zsh
 
 sudo rpm-ostree apply-live
 
-chsh /bin/zsh
+chsh
 
 rpm-ostree install distrobox fastfetch
 
