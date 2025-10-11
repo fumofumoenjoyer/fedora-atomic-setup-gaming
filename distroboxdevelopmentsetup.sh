@@ -48,12 +48,12 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup vscodium-bin 
+yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin 
 rustup update
 rustup default stable
 rustup target add wasm32-unknown-unknown
 echo "Exporting applications to host..."
-distrobox-export --app codium
+distrobox-export --app code
 EOF
 
 echo "✅ Applications installed and exported."
