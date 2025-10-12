@@ -42,7 +42,7 @@ echo "⚙️ Entering container to install tools and export applications..."
 # - Update the  database and install lsfg-vk-bin without asking for confirmation.
 # - Export the desktop entries for the applications to the host.
 distrobox enter "${CONTAINER_NAME}" -- <<EOF
-echo "Installing gaming-apps from the AUR..."
+echo "Installing dev packages..."
 sudo pacman -S --noconfirm --needed base-devel git
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -50,7 +50,7 @@ makepkg -si --noconfirm
 cd
 yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin 
 rustup update
-rustup default stable
+rustup default nightly
 rustup target add wasm32-unknown-unknown
 echo "Exporting applications to host..."
 distrobox-export --app code
