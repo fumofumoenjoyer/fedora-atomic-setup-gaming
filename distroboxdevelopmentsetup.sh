@@ -48,13 +48,14 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin 
+yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin
 rustup update
 rustup default nightly
 rustup target add wasm32-unknown-unknown
 cargo install --git https://github.com/DioxusLabs/dioxus dioxus-cli
 echo "Exporting applications to host..."
 distrobox-export --app code
+distrobox-export --app codium
 EOF
 
 echo "✅ Applications installed and exported."
