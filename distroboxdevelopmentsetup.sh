@@ -52,6 +52,7 @@ yay -Syyu --noconfirm npm zsh bash podman spyder typescript eslint python-pip gd
 rustup update
 rustup default nightly
 rustup target add wasm32-unknown-unknown
+cargo install --git https://github.com/DioxusLabs/dioxus dioxus-cli
 echo "Exporting applications to host..."
 distrobox-export --app code
 EOF
