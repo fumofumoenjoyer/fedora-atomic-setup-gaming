@@ -20,6 +20,7 @@ flatpak install flathub com.brave.Browser
 flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.protonvpn.www
 flatpak install flathub io.podman_desktop.PodmanDesktop
+flatpak install flathub io.mpv.Mpv
 
 cd
 
