@@ -39,7 +39,7 @@ fi
 echo "⚙️ Entering container to install tools and export applications..."
 
 # We execute a series of commands inside the container.
-# - Update the  database and install lsfg-vk-bin without asking for confirmation.
+# - Update the  database and install packages without asking for confirmation.
 # - Export the desktop entries for the applications to the host.
 distrobox enter "${CONTAINER_NAME}" -- <<EOF
 echo "Installing dev packages..."
@@ -48,11 +48,12 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm zsh bash podman ttf-hack-nerd spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin
+yay -Syyu --noconfirm npm zsh bash spyder typescript eslint python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin
 rustup update
 rustup default nightly
 rustup target add wasm32-unknown-unknown
-cargo install --git https://github.com/DioxusLabs/dioxus dioxus-cli
+cargo install cargo-binstall
+cargo binstall dioxus-cli
 echo "Exporting applications to host..."
 distrobox-export --app code
 distrobox-export --app codium
