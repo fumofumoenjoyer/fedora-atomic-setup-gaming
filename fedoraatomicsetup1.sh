@@ -21,8 +21,6 @@ flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.protonvpn.www
 flatpak install flathub io.podman_desktop.PodmanDesktop
 
-chsh
-
 cd
 
 
