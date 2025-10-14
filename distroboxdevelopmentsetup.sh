@@ -54,6 +54,8 @@ rustup default nightly
 rustup target add wasm32-unknown-unknown
 cargo install cargo-binstall
 cargo binstall dioxus-cli
+sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman
+sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/kubectl
 echo "Exporting applications to host..."
 distrobox-export --app code
 distrobox-export --app codium
