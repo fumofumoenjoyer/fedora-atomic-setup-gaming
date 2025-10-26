@@ -62,6 +62,7 @@ distrobox-export --app codium
 EOF
 
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
 echo "✅ Applications installed and exported."
 echo ""
 echo "🎉 Setup complete!"
