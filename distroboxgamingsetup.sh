@@ -48,7 +48,7 @@ echo "⚙️ Entering container to install lsfg-vk and export applications..."
 # - Export the desktop entries for the applications to the host.
 distrobox enter "${CONTAINER_NAME}" -- <<EOF
 echo "Installing gaming-apps from the AUR..."
-paru -Syyu --noconfirm goverlay yay-bin mangohud lsfg-vk-bin steam proton-ge-custom-bin heroic-games-launcher-bin bottles wine giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox winetricks
+paru -Syyu --noconfirm goverlay yay mangohud lsfg-vk-bin steam proton-ge-custom-bin heroic-games-launcher-bin bottles wine giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox winetricks
 echo "Exporting applications to host..."
 distrobox-export --app steam
 distrobox-export --app bottles
